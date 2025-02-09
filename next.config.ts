@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Disable service worker if it's causing issues
+  skipMiddlewareUrlNormalize: true,
 };
 
 export default nextConfig;
